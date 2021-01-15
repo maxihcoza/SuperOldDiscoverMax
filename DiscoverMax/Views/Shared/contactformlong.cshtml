@@ -1,0 +1,27 @@
+﻿@model DiscoverMax.Models.Contact
+
+@using (Html.BeginForm())
+{
+    <div id="contactwrap">
+        <div class="contactitem">
+            @Html.LabelFor(model => model.Name, "Name")<br />
+            @Html.EditorFor(model => model.Name)
+        </div>
+        <div class="contactitem">
+            @Html.LabelFor(model => model.Email, "E-Mail Address")<br />
+            @Html.EditorFor(model => model.Email)
+        </div>
+        <div class="contactitem">
+            @Html.LabelFor(model => model.Number, "Contact Number")<br />
+            @Html.EditorFor(model => model.Number)
+        </div>
+        <div class="contactitem">
+            @Html.LabelFor(model => model.Message, "Your Message")<br />
+            @Html.EditorFor(model => model.Message)
+            @Html.ValidationMessageFor(model => model.Message)
+        </div>
+        <div class="contactitem">
+            <input type="submit" value="Send Message" />
+        </div>
+    </div>
+}

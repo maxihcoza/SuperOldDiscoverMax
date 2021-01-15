@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="bodywrap">
+    <img id="mobileconstructionimg" src="~/Content/Images/Content/websiteunderconstructionmobile.jpg" />
+    <img id="constructionimg" src="~/Content/Images/Content/websiteunderconstruction.jpg" />
+    <br />
+    <section>
+        <h2>A Boring List to all the Links on this Site</h2>
+        <ul>
+            <li>@Html.ActionLink("Home", "home", "about")</li>
+            <li>@Html.ActionLink("Personal", "personal", "about")</li>
+            <li>@Html.ActionLink("Contact", "contact", "about")</li>
+            <li>@Html.ActionLink("Education", "education", "about")</li>
+            <li>@Html.ActionLink("Projects", "projects", "about")</li>
+            <li>@Html.ActionLink("Web Services", "webservices", "about")</li>
+        </ul>
+    </section>
+    <!--
+    <section id="firsthomeblock">
+        <div class="innerhomeblock">
+            <h1 class="bigheading">Portfolio Website of Maxine Harris</h1>
+            <p>CLICK / TAP THE BLOCKS TO DISCOVER MORE ABOUT THIS EMERGING WEB DESIGNER</p>
+        </div>
+    </section>
+    <section id="secondhomeblock">
+        <div class="innerhomeblock">
+            <a class="homelinks" href="@Url.Action("personal", "about")"></a>
+            <h2>@Html.ActionLink("Personal", "personal", "about")</h2>
+            <p>A glimpse at the life of Maxine Harris</p>
+        </div>
+    </section>
+    <section id="thirdhomeblock">
+        <div class="innerhomeblock">
+            <a class="homelinks" href="@Url.Action("contact", "about")"></a>
+            <h2>@Html.ActionLink("Contact", "contact", "about")</h2>
+            <p>Get in touch with me</p>
+        </div>
+    </section>
+    <section id="fourthhomeblock">
+        <div class="innerhomeblock">
+            <a class="homelinks" href="@Url.Action("education", "about")"></a>
+            <h2>@Html.ActionLink("Education", "education", "about")</h2>
+            <p>Formal education completed so far</p>
+        </div>
+    </section>
+    <section id="fifthhomeblock">
+        <div class="innerhomeblock">
+            <a class="homelinks" href="@Url.Action("projects", "about")"></a>
+            <h2>@Html.ActionLink("Projects", "projects", "about")</h2>
+            <p>Showcasing a couple of websites designed by me</p>
+        </div>
+    </section>
+    <section id="sixthhomeblock">
+        <div class="innerhomeblock">
+            <a class="homelinks" href="@Url.Action("webservices", "about")"></a>
+            <h2>@Html.ActionLink("Web Services", "webservices", "about")</h2>
+            <p>Check out my website services</p>
+        </div>
+    </section>    
+    -->
+</div>

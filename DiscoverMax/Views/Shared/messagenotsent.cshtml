@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Message Not Sent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bodywrap">
+    <div class="message">
+        <h1>Sorry, there seems to be a problem!</h1>
+        <p>Your message was not sent, please try again. If all else fails, please contact me via phone call or e-mail and inform me of this error.</p><br />
+        <!--@Html.ActionLink("Back to Contact Page", "contact", "about")<br />-->
+        @Html.ActionLink("Go to Home Page", "home", "about")
+    </div>
+</div>

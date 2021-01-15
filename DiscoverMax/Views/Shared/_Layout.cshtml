@@ -1,0 +1,88 @@
+﻿﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1" />
+    <title>@ViewBag.Title - Maxine Harris ( a portfolio website )</title>
+    <script src="~/Scripts/jquery-2.2.0.js"></script>
+    <script src="~/Content/MobileMenu.js"></script>
+    <script src="js/cssrefresh.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Spinnaker|Audiowide' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <header>
+        <div id="headwrap">
+            <div id="logo">
+                <!--<a href="@Url.Action("home", "about")"></a>-->
+                <div id="logowrap">
+                    <h1 class="bigheading">DISCOVER MAX</h1>
+                    <img src="~/Content/Images/Styling/dot.png" />
+                    <img src="~/Content/Images/Styling/dot.png" />
+                    <img src="~/Content/Images/Styling/dot.png" />
+                    <p>Graphic Web Developer</p>
+                </div>
+            </div>
+            <!--
+            <nav>
+                <ul>
+                    <li id="firstmenuitem"><a href="">MENU</a></li>
+                    <li>@Html.ActionLink("Home", "home", "about")</li>
+                    <li>@Html.ActionLink("Personal", "personal", "about")</li>
+                    <li>@Html.ActionLink("Contact", "contact", "about")</li>
+                    <li>@Html.ActionLink("Education", "education", "about")</li>
+                    <li>@Html.ActionLink("Projects", "projects", "about")</li>
+                    <li>@Html.ActionLink("Web Services", "webservices", "about")</li>
+                </ul>
+                <div id="mobilenavigation">
+                    <select id="mobilemenu"></select>
+                </div>
+            </nav>    
+            -->
+        </div>
+        <!--<div id="newsbanner">
+            NEWS - - - Website updates are underway<br />
+            Visit <a href="https://www.facebook.com/events/575841515896998/">here</a> for more info.
+        </div>-->
+    </header>
+    <div id="body">
+        @RenderBody()
+        <div id="socialwrap">
+            <p>Tell someone about this web developer...</p>
+            <div>
+                <a href="http://twitter.com/intent/tweet?status=A+graphic+web+designer+:+www.discovermax.co.za" target="_blank"><img src="~/Content/Images/Styling/twitter.png" width="50" height="50" /></a>
+                <a href="http://www.facebook.com/sharer/sharer.php?u=www.discovermax.co.za&title=A+graphic+web+designer" target="_blank"><img src="~/Content/Images/Styling/facebook.png" width="50" height="50" /></a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=www.discovermax.co.za&title=A+graphic+web+designer" target="_blank"><img src="~/Content/Images/Styling/linkedin.png" width="50" height="50" /></a>
+                <a href="https://plus.google.com/share?url=www.discovermax.co.za" target="_blank"><img src="~/Content/Images/Styling/googleplus.png" width="50" height="50" /></a>
+            </div>
+        </div>
+        <!--<div id="availabilitywrap">
+            <div>
+                <img src="~/Content/Images/Styling/busy.png" alt="icon showing availability - unavailable" />
+                <p>
+                    CURRENTLY BUSY WITH WEBSITE RENOVATIONS
+                </p>
+            </div>
+            <p class="ovalcontainer">
+                I will gladly take on website projects from all over the world. Arrangements can be made if you would prefer to discuss the design of the website in person. Travelling costs will need to be considered. The first meeting with those staying in Standerton, Secunda, Middelburg and Emalahleni (Mpumalanga, South Africa) is free.
+            </p>
+        </div>-->
+        
+    </div>
+    <footer>
+        <div id="leftfoot">
+            <p><img src="~/Content/Images/Styling/brainyhandcraft.png" alt="design tools" /></p>
+            <p>Flexible and open-minded web assistance</p>
+        </div>
+        <div id="middlefoot">
+            @Html.Partial("/Views/Shared/contactform.cshtml")
+        </div>
+        <div id="rightfoot">
+            <p><img src="~/Content/Images/Styling/brainybinoculars.png" alt="binoculars" /></p>
+            @Html.ActionLink("View Website Credits","websitecredits")
+        </div>
+    </footer>
+</body>
+</html>

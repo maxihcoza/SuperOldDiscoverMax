@@ -1,0 +1,17 @@
+﻿@model DiscoverMax.Models.Contact
+
+@using (Html.BeginForm("contactform","about",FormMethod.Post))
+{
+    <div id="contactwrap">
+        <div class="contactitem">
+            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { placeholder = "Your name" } })
+        </div>
+        <div class="contactitem">
+            @Html.EditorFor(model => model.Message, new { htmlAttributes = new { placeholder = "Talk to me ..." } })
+            @Html.ValidationMessageFor(model => model.Message)
+        </div>
+        <div class="contactitem">
+            <input type="submit" value="Send Message" />
+        </div>
+    </div>
+}

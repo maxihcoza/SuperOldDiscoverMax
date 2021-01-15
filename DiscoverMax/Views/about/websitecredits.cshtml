@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Credits";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="bodywrap">
+    <section>
+        <h1>The Designer</h1>
+        <p>Website Design & Maintenance<br />by @Html.ActionLink("Maxine Harris", "home", "about")<br />Copyright &copy; @DateTime.Now.Year</p>
+    </section>
+    <section>
+        <h1>Helping Hands</h1>
+        <p>Creating a website is not just a "one man job", and I feel it's an honour to give credit to those that contributed to the design of this website.</p>
+        <ul>
+            <li>Background image/pattern: <a href="http://thepatternlibrary.com/#ocean" rel="nofollow">The Pattern Library</a></li>
+            <li>
+                Website fonts: Audiowide (by <a href="https://plus.google.com/110671794147246487935/about" rel="nofollow">Astigmatic</a>)
+                and Spinnaker (by <a href="https://plus.google.com/111248592282802896977/about" rel="nofollow">Elena Albertoni</a>)
+                <br />Provided by <a href="https://www.google.com/fonts">Google Fonts</a>
+            </li>
+            <li>Social Icons: <a href="https://www.iconfinder.com/OneDeepDesign" rel="nofollow">One Deep Design</a></li>
+            <li>Footer Icons: <a href="http://wefunction.com/contact/" rel="nofollow">Liam McKay</a></li>
+            <li>Construction Image: <a href="https://www.flickr.com/photos/dok1/3944465495/" rel="nofollow">New Barn in Pike County, Ohio</a> with <a href="https://www.iconfinder.com/icons/175248/hammer_icon#size=128" rel="nofollow">hammer icon</a> and <a href="https://www.flickr.com/photos/arrhakisfreeimages/15902892705/" rel="nofollow">texture</a></li>
+        </ul>
+    </section>
+    <!--
+    <section>
+        <h1>Images</h1>
+    </section>    
+    -->
+    <section>
+        <h1>References and Research</h1>
+        <p>A huge thanks to all those developer websites (<a href="https://css-tricks.com/" rel="nofollow">CSS-Tricks</a>, <a href="http://stackoverflow.com/" rel="nofollow">Stack Overflow</a>, and <a href="http://www.w3schools.com/" rel="nofollow">W3Schools</a> to name a few) and their communities. I would not have been able to get this far without them, as they offer very good advice and tips for overcoming design obstacles.</p>
+    </section>
+    <section>
+        <h1>Queries or Complaints</h1>
+        <p>If you have a problem with any of the content on this site, or if you would like to report a bug or error, please don't hesitate to @Html.ActionLink("contact me", "contact", "about").</p>
+        <p>If you like the design, and would be interested in having a website created for you, I would be more than willing to help you. @Html.ActionLink("Get in touch", "contact", "about") with me, and we can discuss the details.</p>
+    </section>
+</div>

@@ -1,0 +1,85 @@
+﻿@model DiscoverMax.Models.Contact
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="bodywrap">
+    <section>
+        <h1>Contact Details</h1>
+        <p><b>Day time phone number:</b> 078 393 9807</p>
+        <p><b>E-mail:</b> talk@discovermax.co.za</p>
+        <!--
+        <img id="businesscardmobile" src="~/Content/Images/Content/businesscardmobile.png" alt="Phone, SMS or Whatsapp me at +27 78 393 98 07 or email me at talk@discovermax.co.za" />
+        <img id="businesscard" src="~/Content/Images/Content/businesscard.png" alt="Phone, SMS or Whatsapp me at +27 78 393 98 07 or email me at talk@discovermax.co.za" />-->
+        <p style="color: rgb(128, 128, 128)"><i>YOU CAN ALSO FIND ME ON WHATSAPP</i></p>
+        <p><b>Current Location:</b> Middelburg, Mpumalanga (South Africa)<br />I am also occasionally in Standerton, Mpumalanga / Emalahleni, Mpumalanga</p>
+    </section>
+    <section>
+        <h1>E-Mail Form</h1>
+        <p>If you would like me to get back to you, please include at least one method of communication (phone number or e-mail address). Anonymous comments and suggestions are welcome.</p>
+        @using (Html.BeginForm())
+        {
+            <div id="contactwrap">
+                <div class="contactitem">
+                    @Html.LabelFor(model => model.Name, "Name")<br />
+                    @Html.EditorFor(model => model.Name)
+                </div>
+                <div class="contactitem">
+                    @Html.LabelFor(model => model.Email, "E-Mail Address")<br />
+                    @Html.EditorFor(model => model.Email)
+                </div>
+                <div class="contactitem">
+                    @Html.LabelFor(model => model.Number, "Contact Number")<br />
+                    @Html.EditorFor(model => model.Number)
+                </div>
+                <div class="contactitem">
+                    @Html.LabelFor(model => model.Message, "Your Message")<br />
+                    @Html.EditorFor(model => model.Message)
+                    @Html.ValidationMessageFor(model => model.Message)
+                </div>
+                <div class="contactitem">
+                    <input type="submit" value="Send Message" />
+                </div>
+            </div>
+        }
+    </section>
+    <section>
+        <h1>Social Networks</h1>
+        <p><b>Facebook:</b> <a href="https://www.facebook.com/discovermaxwebsites">facebook.com/discovermaxwebsites</a></p>
+        <p>
+            <b>Twitter:</b> @@maxiharris93
+            <a href="https://twitter.com/maxihcoza" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @@maxihcoza</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </p>
+        <p><b>Google Plus:</b> <a href="https://plus.google.com/nonexistantprofile.html">google.com/+MaxineHarris93</a></p>
+        <p>
+            <b>LinkedIn:</b><br />
+            <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/maxihcoza" data-format="inline" data-related="false"></script>
+        </p>
+        <p>
+            <b>Freelancer:</b><br/>
+            <a href="">address for Freelancer.com</a>
+        </p>
+        <p>
+            <b>Upwork:</b><br />
+            <a href="">address for Freelancer.com</a>
+        </p>
+        <p>
+            <b>Freelancer:</b><br />
+            <a href="">address for Upwork.com</a>
+        </p>
+        <p>
+            <b>Flickr:</b><br />
+            <a href="">address for Flickr.com</a>
+        </p>
+        <p>
+            <b>DeviantArt:</b><br />
+            <a href="">address for DeviantArt.com</a>
+        </p>
+    </section>
+    <section>
+        <h1>I am available for hire</h1>
+        <p>My web development skills grow every day. I believe I could be a good addition for your team.</p>
+    </section>
+</div>

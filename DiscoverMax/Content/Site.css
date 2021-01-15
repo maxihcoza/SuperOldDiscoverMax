@@ -1,0 +1,1055 @@
+﻿/*FOR SIZES THAT ARE INCLUSIVE OF MARGIN AND PADDING*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    background-image: url(/Content/Images/Styling/ocean.jpg);
+    background-repeat: repeat;
+}
+
+body {
+    margin-bottom: 0;
+    height: 100%;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+h1, h2, h3 {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+header, #body, footer {
+    padding: 0;
+    margin: auto;
+    min-width: 300px;
+    font-family: "Spinnaker", sans-serif;
+    font-size: 16px;
+}
+
+header, footer {
+    width: 100%;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: rgb(0,204,51);/*strong cyan-lime green*/
+}
+
+#headwrap, footer {
+    overflow: hidden;
+    width: 100%;
+    border: 1px groove rgb(224,255,231);/*very pale lime green*/
+    border: 1px groove rgba(224,255,231,0.5);/*very pale lime green*/
+}
+
+#mobilenavigation:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+}
+
+.bodywrap ul, .projectwrap {
+    margin: auto;
+    padding-left: 5px;
+    width: 100%;
+    background-color: rgb(224,255,231);/*very pale lime green*/
+    background-color: rgba(224,255,231,0.5);/*very pale lime green*/
+}
+
+.bodywrap li, .projectwrap div {
+    padding-left: 5px;
+    width: 100%;
+    color: rgb(224,255,231);/*very pale lime green*/
+    color: rgba(224,255,231,0.5);/*very pale lime green*/
+    background-color: rgb(0,0,0);
+    list-style: square;
+}
+
+#socialwrap, #availabilitywrap {
+    display: inline-block;
+    width: 100%;
+}
+
+/*--------------- Header ---------------*/
+#headwrap {
+    margin: 0;
+    display: inline;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color: rgb(0,47,12);/*very dark (mostly black) cyan-lime green*/
+}
+
+#logo {
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+    min-width: 280px;
+    text-align: center;
+    background-color: rgb(0,47,12);/*very dark (mostly black) cyan-lime green*/
+}
+
+#logo a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 190px;
+    text-decoration: none;
+    z-index: 999;
+    opacity: 0;
+}
+
+#logoimg {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+#logowrap {
+    text-align: center;
+}
+
+#logowrap h1, #logowrap img, #logowrap p {
+    margin: 0;
+    padding: 0;
+    color: rgb(255,255,255);
+}
+
+#logowrap h1 {
+    font-size: 24px;
+}
+
+#logowrap img {
+    position: relative;
+    width: 6px;
+    height: 6px;
+    background-size: 100%;
+    background-position: center;
+}
+
+#logowrap p {
+    font-size: 20px;
+}
+
+/*--------------- Navigation ---------------*/
+nav {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+nav, #mobilenavigation {
+    background-color: rgb(0,204,51);/*strong cyan-lime green*/
+}
+
+nav ul {
+    display: none;
+}
+
+#mobilenavigation {
+    overflow: hidden;
+    position: absolute;
+    left: 10px;
+    width: 85px;
+    height: 36px;
+}
+
+#mobilenavigation select {
+    padding: 0px;
+    width: 116px;
+    height: 30px;
+    border: 0;
+    line-height: 25px;
+    font-family: "Spinnaker", sans-serif;
+    font-size: 25px;
+    color: rgb(255,255,255);
+    background: transparent;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+#mobilenavigation select option {
+    background-color: rgb(0,204,51);/*strong cyan-lime green*/
+}
+
+/*--------------- Footer ---------------*/
+footer {
+    height: 500px;
+    color: rgb(255,255,255);
+    text-align: center;
+    background-color: rgb(0,204,51);/*strong cyan-lime green*/
+}
+
+#leftfoot, #middlefoot, #rightfoot {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgb(255,255,255);
+}
+
+#rightfoot a {
+    color: rgb(255,255,255);
+}
+
+/*--------------- Body ---------------*/
+#body {
+    width: 95%;
+}
+
+.bodywrap, #homewrap {
+    overflow: hidden;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(255,255,255);
+    color: rgba(255,255,255,0.8);
+}
+
+.bodywrap {
+    padding: 5px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+}
+
+.bodywrap section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bigheading {
+    font-family: Audiowide, cursive;
+}
+
+.bodywrap ul {
+    margin-top: 15px;
+}
+
+.bodywrap li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.projectwrap div {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 100%;
+}
+
+.longlinks a {
+    overflow: hidden;
+    display: inline-block;
+    width: 280px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ovalcontainer {
+    height: auto;
+    color: rgb(128, 128, 128);/*dark grey*/
+}
+
+.message {
+    margin-bottom: 80%;
+}
+
+hr {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/*--------------- News Banner ---------------*/
+#newsbanner {
+    margin: 0;
+    padding: 5px;
+    border: 1px groove rgb(224,255,231);/*very pale lime green*/
+    border: 1px groove rgba(224,255,231,0.5);/*very pale lime green*/
+    border-top: none;
+    color: rgb(255,255,255);
+    text-align: center;
+    background-color: rgb(204,0,153);/*strong pink*/
+    background-color: rgba(204,0,153,0.4);/*strong pink*/
+}
+
+/*--------------- Social Bar ---------------*/
+#socialwrap {
+    text-align: center;
+}
+
+#socialwrap p, #socialwrap div {
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+#socialwrap p {
+    color: rgb(255,255,255);
+}
+
+#footersocialwrap div {
+    height: 50px;
+}
+
+/*--------------- Availability Box ---------------*/
+#availabilitywrap {
+    width: 100%;
+    border: 1px groove rgb(224,255,231);/*very pale lime green*/
+    border: 1px groove rgba(224,255,231,0.5);/*very pale lime green*/
+    text-align: center;
+    background-color: rgb(255,255,255);/*strong pink*/
+    background-color: rgba(204,0,153,0.4);/*strong pink*/
+}
+
+#availabilitywrap div {
+    margin-bottom: 20px;
+}
+
+#availabilitywrap img, #availabilitywrap p {
+    overflow: hidden;
+    margin: 0;
+    display: inline-block;
+}
+
+#availabilitywrap img {
+    width: 60px;
+    height: 60px;
+}
+
+#availabilitywrap i {
+    font-size: 20px;
+}
+
+/*--------------- Home Page ---------------*/
+#constructionimg {
+    display: none;
+}
+
+#mobileconstructionimg {
+    margin: auto;
+    width: 300px;
+}
+
+#homewrap {
+    text-align: center;
+}
+
+#homewrap section, .innerhomeblock {
+    width: 100%;
+}
+
+#homewrap section {
+    padding-bottom: 2%;
+    display: table;
+    float: left;
+    border: 5px solid rgb(255,255,255);
+    text-align: center;
+}
+
+.innerhomeblock {
+    padding: 5px;
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    height: 150px;
+    text-decoration: none;
+    color: rgb(0,0,0);
+    background-color: rgb(51,51,51);/*very dark gray*/
+    background-color: rgba(51,51,51,0.5);/*very dark gray*/
+    background: -webkit-linear-gradient(90deg, rgb(64,59,74) 10%, rgb(231,233,187) 90%);
+    background: -webkit-linear-gradient(90deg, rgba(64,59,74,0.5) 10%, rgba(231,233,187,0.5) 90%);
+    background: -moz-linear-gradient(90deg, rgb(64,59,74) 10%, rgb(231,233,187) 90%);
+    background: -moz-linear-gradient(90deg, rgba(64,59,74,0.5) 10%, rgba(231,233,187,0.5) 90%);
+    background: -o-linear-gradient(90deg, rgb(64,59,74) 10%, rgb(231,233,187) 90%);
+    background: -o-linear-gradient(90deg, rgba(64,59,74,0.5) 10%, rgba(231,233,187,0.5) 90%);
+    background: linear-gradient(90deg, rgb(64,59,74) 10%, rgb(231,233,187) 90%);
+    background: linear-gradient(90deg, rgba(64,59,74,0.5) 10%, rgba(231,233,187,0.5) 90%);/*very dark grayish violet - light grayish yellow*/
+}
+
+#firsthomeblock {
+    height: 200px;
+    font-size: 18px;
+    background-color: rgb(0,204,51);/*strong cyan-lime green*/
+}
+
+#secondhomeblock {
+    background-color: rgb(0,153,102);/*dark cyan-lime green*/
+}
+
+#thirdhomeblock {
+    background-color: rgb(0,102,153);/*dark blue*/
+}
+
+#fourthhomeblock {
+    background-color: rgb(204,204,51);/*strong yellow*/
+}
+
+#fifthhomeblock {
+    background-color: rgb(204,153,102);/*moderate orange*/
+}
+
+#sixthhomeblock {
+    background-color: rgb(204,102,153);/*moderate pink*/
+}
+
+.homelinks:link, .homelinks:visited, .homelinks:hover, .homelinks:active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    text-decoration: none;
+    color: rgb(0,0,0);
+    z-index: 999;
+    background-color: rgb(255,255,255);
+    opacity: 0;
+}
+
+.innerhomeblock h1 {/*Centres the main heading on Home page*/
+    margin-top: 0 !important;
+}
+
+.innerhomeblock h2 {
+    margin: auto;
+    margin-bottom: 10px;
+    display: table;
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+}
+
+.innerhomeblock h2 a {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    color: rgb(255,255,255);
+    color: rgba(255,255,255,0.8);
+}
+
+/*--------------- Contact ---------------*/
+#businesscard {
+    display: none;
+}
+
+#businesscardmobile {
+    width: 250px; 
+    height: 429px;
+}
+
+#contactbox {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: rgb(224,255,231);/*very pale lime green*/
+    background-color: rgba(224,255,231,0.2);/*very pale lime green*/
+}
+
+.contactitem {
+    margin-bottom: 10px;
+}
+
+input[type="text"], textarea, input[type="submit"], input[type="reset"] {
+    /* Flexibility */
+    box-sizing: border-box;
+    width: 100%;
+
+    /* Styling */
+    height: 30px;
+    font-size: 14px;
+    color: rgb(255,255,255);
+    padding: 1px;
+    border: 0;
+    border-radius: 0.2px;
+    outline: none
+}
+
+input[type="text"], textarea {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 200px;
+    border: 1px groove rgb(224,255,231);/*very pale lime green*/
+    font-family: "Spinnaker", sans-serif !important;
+    background-image: url(/Content/Images/Styling/ocean.jpg);
+    background-repeat: repeat;
+    scrollbar-base-color: rgb(0,0,0);
+    scrollbar-highlight-color: rgba(224,255,231,0.2);/*very pale lime green*/
+}
+
+textarea {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+input[type="submit"] {
+    width: 180px;
+    border-top: 1px solid rgb(0,0,0);
+    border-top: 1px solid rgba(0,0,0,0.8);
+    border-bottom: 1px solid rgb(0,0,0);
+    border-bottom: 1px solid rgba(0,0,0,0.8);
+    border-right: 3px solid rgb(0,0,0);
+    border-right: 3px solid rgba(0,0,0,0.8);
+    border-left: 3px solid rgb(0,0,0);
+    border-left: 3px solid rgba(0,0,0,0.8);
+    font-family: "Spinnaker", sans-serif !important;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.2);
+    -o-transition: ease-out background-color 0.75s;
+    -moz-transition: ease-out background-color 0.75s;
+    -webkit-transition: ease-out background-color 0.75s;
+    transition:  ease-out background-color 0.75s;
+    cursor: pointer;
+}
+
+.bodywrap input[type="submit"] {
+    border-top-color: rgb(224,255,231);/*very pale lime green*/
+    border-bottom-color: rgb(224,255,231);
+    border-right-color: rgb(224,255,231);
+    border-left-color: rgb(224,255,231);
+}
+
+.field-validation-error {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: block;
+    color: rgb(255,0,0);/*red*/
+    font-weight: bold;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid rgb(255,0,0);/*red*/
+}
+
+/*--------------- Education ---------------*/
+.educationhead, .educationhead img, .educationhead h2, .educationhead p {
+    display: inline-block;
+}
+
+.educationhead h2, .educationhead p {
+    margin: 10px;
+}
+
+.educationhead h2 {
+    font-weight: bold;
+}
+
+.educationhead p {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#subjectswrap, #subjectswrap div {
+    display: inline-block;
+}
+
+#subjectswrap div {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+#subjectswrap h3, #subjectswrap p {
+    margin: 0 !important;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#subjectswrap h3 {
+    text-decoration: underline;
+}
+
+.examnumberblock {
+    margin-right: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 100px;
+    border: 1px groove rgb(224,255,231);/*very pale lime green*/
+    border: 1px groove rgba(224,255,231,0.5);/*very pale lime green*/
+}
+
+#certificatedisplay {
+    text-align: center;
+}
+
+#certificatedisplay div {
+    margin: 0;
+    display: inline-block;
+    width: 250px;
+    height: 176px;
+    background-size: 100% 100%;
+}
+
+#mcts1 {
+    background-image: url(/Content/Images/Thumbnails/mcts1cert_thumb.jpg);
+}
+
+#mcts2 {
+    background-image: url(/Content/Images/Thumbnails/mcts2cert_thumb.jpg);
+}
+
+#mcts3 {
+    background-image: url(/Content/Images/Thumbnails/mcts3cert_thumb.jpg);
+}
+
+#ms1 {
+    background-image: url(/Content/Images/Thumbnails/ms1cert_thumb.jpg);
+}
+
+#ms2 {
+    background-image: url(/Content/Images/Thumbnails/ms2cert_thumb.jpg);
+}
+
+#mcp {
+    background-image: url(/Content/Images/Thumbnails/mcpcert_thumb.jpg);
+}
+
+#mcsd {
+    background-image: url(/Content/Images/Thumbnails/mcsdcert_thumb.jpg);
+}
+
+#mcts1:hover {
+    background-image: url(/Content/Images/Thumbnails/mcts1cert_thumbhover.jpg);
+}
+
+#mcts2:hover {
+    background-image: url(/Content/Images/Thumbnails/mcts2cert_thumbhover.jpg);
+}
+
+#mcts3:hover {
+    background-image: url(/Content/Images/Thumbnails/mcts3cert_thumbhover.jpg);
+}
+
+#ms1:hover {
+    background-image: url(/Content/Images/Thumbnails/ms1cert_thumbhover.jpg);
+}
+
+#ms2:hover {
+    background-image: url(/Content/Images/Thumbnails/ms2cert_thumbhover.jpg);
+}
+
+#mcp:hover {
+    background-image: url(/Content/Images/Thumbnails/mcpcert_thumbhover.jpg);
+}
+
+#mcsd:hover {
+    background-image: url(/Content/Images/Thumbnails/mcsdcert_thumbhover.jpg);
+}
+
+@media (min-width: 600px) {
+    header, footer {
+        width: 95%;
+    }
+
+    /*--------------- Navigation ---------------*/
+    nav {
+        width: 24%;
+        height: 100px;
+        border-top: none;
+    }
+
+    #mobilenavigation {
+        top: 32px;
+        left: auto;
+        right: 20px;
+    }
+
+    /*--------------- Footer ---------------*/
+    footer {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    /*--------------- Body ---------------*/
+    #body {
+        width: 90%;
+    }
+
+    .bodywrap {
+        padding: 15px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .bodywrap section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .bodywrap ul, .bodywrap li, .projectwrap, .projectwrap div {
+        padding-left: 10px;
+    }
+
+    #businesscard {
+        display: block;
+        width: 380px; 
+        height: 221px;
+    }
+
+    #businesscardmobile {
+        display: none;
+    }
+
+    .longlinks a {
+        width: auto;
+    }
+    
+    .ovalcontainer {
+        margin-top: 0;
+        padding: 20px;
+        width: 90%;
+        border: 1px groove rgb(224,255,231);/*very pale lime green*/
+        border: 1px groove rgba(224,255,231,0.5);/*very pale lime green*/
+        border-bottom: none;
+        border-radius: 40%;
+    }
+
+    /*--------------- Availability Box ---------------*/
+    #availabilitywrap div {
+        margin-bottom: 10px;
+    }
+
+    #availabilitywrap div p {
+        padding: 5px;
+    }
+
+    /*--------------- Home Page ---------------*/
+    #constructionimg {
+        margin: auto;
+        display: block;
+        width: 500px;
+    }
+    
+    #mobileconstructionimg {
+        display: none;
+    }
+
+    #homewrap section {
+        margin: 1%;
+        border-bottom-right-radius: 15px;
+        width: 48%;
+    }
+
+    #homewrap section, .innerhomeblock {
+        border-top-left-radius: 15px;
+    }
+
+    .innerhomeblock, .homelinks:link, .homelinks:visited, .homelinks:hover, .homelinks:active {
+        height: 200px;
+    }
+}
+
+@media (min-width: 800px) {
+    header, footer {
+        width: 90%;
+    }
+
+    p {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /*--------------- Navigation ---------------*/
+    nav {
+        width: 50%;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        position: absolute;
+        top: 28px;
+        right: 0px;
+        width: auto;
+        height: 44px;
+    }
+
+    nav li {
+        padding: 0;
+        display: inline;
+        list-style: none;
+    }
+
+    nav li a:link, nav li a:visited, nav li a:hover, nav li a:active {
+        padding-left: 3px;
+        padding-right: 3px;
+        font-size: 18px;
+        text-decoration: none;
+        color: rgb(255,255,255);
+        white-space: nowrap;
+        -o-transition: ease-out color 0.3s;
+        -moz-transition: ease-out color 0.3s;
+        -webkit-transition: ease-out color 0.3s;
+        transition:  ease-out color 0.3s;
+    }
+
+    nav li a:hover, nav li a:active {
+        color: rgb(0,0,0);
+        color: rgba(0,0,0,0.8);
+    }
+
+    #mobilenavigation, #firstmenuitem a {
+        display: none;
+    }
+
+    /*--------------- Footer ---------------*/
+    footer {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: 230px;
+    }
+
+    #leftfoot, #rightfoot {
+        width: 25%;
+    }
+
+    #middlefoot {
+        margin-top: 20px;
+        width: 48%;
+    }
+
+    /*--------------- Body ---------------*/
+    #body {
+        width: 85%;
+    }
+
+    .bodywrap {
+        padding: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .bodywrap ul {
+        margin-top: 20px;
+    }
+    
+    /*--------------- News Banner ---------------*/
+    #newsbanner {
+        padding: 10px;
+    }
+
+    /*--------------- Availability Box ---------------*/
+    #availabilitywrap div p {
+        padding: 10px;
+    }
+
+    /*--------------- Home Page ---------------*/
+    #constructionimg {
+        width: 675px;
+    }
+
+    /*--------------- Contact ---------------*/
+    input[type="text"], textarea {
+        width: 300px;
+    }
+
+    .message {
+        margin-bottom: 60%;
+    }
+
+    /*--------------- Education ---------------*/
+    #subjectswrap div {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 1000px) {
+    /*--------------- Navigation ---------------*/
+    nav {
+        width: 62%;
+    }
+
+    nav ul {
+        top: 39px;
+        height: 22px;
+    }
+
+    /*--------------- Footer ---------------*/
+    #leftfoot {
+        padding-left: 5px;
+    }
+
+    #rightfoot {
+        padding-right: 5px;
+    }
+
+    /*--------------- Body ---------------*/
+    .bodywrap {
+        padding: 25px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .bodywrap, #homewrap {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #businesscard {
+        width: 420px;
+        height: 245px;
+    }
+
+    /*--------------- Home Page ---------------*/
+    #constructionimg {
+        width: 800px;
+    }
+
+    #homewrap {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    #homewrap section {
+        width: 31%;
+    }
+
+    #firsthomeblock {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    #secondhomeblock {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        order: 1;        
+    }
+
+    #thirdhomeblock {
+        -webkit-box-ordinal-group: 3;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    #fourthhomeblock {
+        -webkit-box-ordinal-group: 4;
+        -moz-box-ordinal-group: 4;
+        -ms-flex-order: 4;
+        order: 4;
+    }
+
+    #fifthhomeblock {
+        -webkit-box-ordinal-group: 5;
+        -moz-box-ordinal-group: 5;
+        -ms-flex-order: 5;
+        order: 5;
+    }
+
+    #sixthhomeblock {
+        -webkit-box-ordinal-group: 6;
+        -moz-box-ordinal-group: 6;
+        -ms-flex-order: 6;
+        order: 6;
+    }
+
+    /*--------------- Contact ---------------*/
+    #contactwrap, #contactbox {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header, footer {
+        max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    /*--------------- Footer ---------------*/
+    #leftfoot, #rightfoot {
+        width: 33%;
+    }
+
+    #middlefoot {
+        width: 33%;
+    }
+
+    /*--------------- Body ---------------*/
+    #body {
+        max-width: 1150px;
+    }
+
+    .bodywrap {
+        padding: 30px;
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+
+    #businesscard {
+        width: 600px; 
+        height: 350px;
+    }
+
+    .message {
+        margin-bottom: 50%;
+    }
+
+    /*--------------- News Banner ---------------*/
+    #newsbanner {
+        padding: 15px;
+    }
+
+    #certificatedisplay div {
+        margin: 10px;
+    }
+}
